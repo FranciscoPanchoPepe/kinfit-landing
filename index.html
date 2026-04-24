@@ -26,7 +26,8 @@
 <meta name="twitter:image" content="/img/og.jpg">
 
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/img/logo-circle.png">
+<link rel="icon" href="/img/apple-touch-icon.png" sizes="180x180" type="image/png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
 <link rel="preload" as="image" href="/img/hero.jpg" media="(min-width:760px)" fetchpriority="high">
 <link rel="preload" as="image" href="/img/hero-sm.jpg" media="(max-width:759px)" fetchpriority="high">
@@ -64,9 +65,10 @@ p{margin:0 0 1em;color:#C8CCD3}
 /* ===== Header ===== */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.85);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--border)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
-.brand{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+.brand{display:inline-flex;align-items:center;gap:.55rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
 .brand:hover{color:#fff}
-.brand-mark{width:40px;height:40px;flex-shrink:0}
+.brand-logo{width:48px;height:48px;flex-shrink:0;border-radius:10px;display:block;object-fit:contain;background:#0B0B0D}
+.brand-logo-lg{width:64px;height:64px}
 .nav-list{display:none;gap:1.4rem;list-style:none;margin:0;padding:0}
 .nav-list a{color:#D6D9DE;font-weight:600;font-size:.98rem;padding:.5rem 0;position:relative;transition:color .15s}
 .nav-list a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--mint);transition:width .2s}
@@ -243,7 +245,7 @@ details.faq p{margin:.85rem 0 0;color:var(--muted)}
   "name":"Kinfit",
   "alternateName":"Kinfit Kinesiología Deportiva",
   "image":"https://kinfit.cl/img/og.jpg",
-  "logo":"https://kinfit.cl/img/logo-circle.png",
+  "logo":"https://kinfit.cl/img/logo-512.png",
   "url":"https://kinfit.cl/",
   "telephone":"+56986417871",
   "email":"contacto@kinfit.cl",
@@ -274,12 +276,7 @@ details.faq p{margin:.85rem 0 0;color:var(--muted)}
 <header class="site-header" role="banner">
  <div class="container nav">
   <a class="brand" href="#top" aria-label="Kinfit - inicio">
-   <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-    <circle cx="32" cy="32" r="28" fill="#0B0B0D" stroke="#fff" stroke-width="2"/>
-    <path d="M20 18v28M20 32l11-14M20 32l13 14" fill="none" stroke="#3EE3C0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M40 18h10M40 18v28M40 30h7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-   </svg>
-   <span>Kinfit</span>
+   <img class="brand-logo" src="/img/logo.png" alt="Kinfit" width="48" height="48" fetchpriority="high">
   </a>
   <nav aria-label="Principal">
    <ul class="nav-list">
@@ -565,12 +562,7 @@ details.faq p{margin:.85rem 0 0;color:var(--muted)}
   <div class="footer-grid">
    <div>
     <a class="brand" href="#top" style="color:#fff">
-     <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-      <circle cx="32" cy="32" r="28" fill="#0B0B0D" stroke="#fff" stroke-width="2"/>
-      <path d="M20 18v28M20 32l11-14M20 32l13 14" fill="none" stroke="#3EE3C0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M40 18h10M40 18v28M40 30h7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-     </svg>
-     <span>Kinfit</span>
+     <img class="brand-logo brand-logo-lg" src="/img/logo.png" alt="Kinfit" width="64" height="64" loading="lazy">
     </a>
     <p style="margin-top:.85rem;color:#8B9199;font-size:.95rem">Kinesiología deportiva en Viña del Mar. Atención personalizada, en centro, a domicilio o en tu empresa.</p>
    </div>
